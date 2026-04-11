@@ -1,0 +1,174 @@
+<!-- 
+a title (e.g. "Pomodoro Timer First Brainstorm")
+subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+subtitle for the date
+attendance list
+agenda of what the meeting will cover
+things that were unfinished business from last meeting
+things that are new business that need to be talked about
+any miscellaneous comments / questions / concerns that anyone would like to bring up
+pictures of any diagrams / architecture / things that were presented
+SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+audio recording the meeting
+video recording of the meeting -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="John Bolibol">
+    <meta charset="UTF-8">
+    <meta name="description" content="November 2024 End of Month Team Meeting">
+    <link rel="icon" href="images/favicon.ico">
+    <title>6Sense LLC Order Processing</title>
+  </head>
+
+  <body>
+    <header>
+        <img src="images/6sense.png" width="150">
+        
+        <div>
+            <h1>6Sense LLC</h1> 
+            <h3>November 2024 End of Month Order Processing Team Meeting</h3>
+            <h4>November 28, 2024</h4>
+        </div>
+
+        <nav>
+            <ol>
+                <li><a href="#attendance">Attendance List</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinishedbusiness">Unfinished Business</a></li>
+                <li><a href="#newbusiness">New Business</a></li>
+                <li><a href="#miscellaneous">Miscellaneous Comments / Questions / Concerns</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#forms">Feedback Form</a></li>
+            </ol>
+        </nav>
+    </header>
+    <hr>
+    <main>
+
+        <section id="attendance">
+            <h2>Attendance List:</h2>
+            <h3>Present</h3>
+                <ul>
+                    <li>Melissa Cashmere</li>
+                    <li>Cassandra Windham</li>
+                    <li>Sebastian Lopez</li>
+                    <li>George Matthison</li>
+                    <li>Unique Wilkins</li>
+                </ul>
+            <h3>Absent</h3>
+                <ul>
+                    <li>Monet Exchange (Dentist Appointment)</li>
+                </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda:</h2>
+            <ul>
+                <li>Introduce New Employee</li>
+                <li>Revisit Unfinished Business</li>
+                <li>New Business</li>
+                <li>Training Protocol</li>
+                <li>Vacation Days</li>
+                <li>Questions</li>
+            </ul>
+        </section>
+
+        <section id="unfinishedbusiness">
+            <h2>Unfinished Business:</h2>
+            <ul>
+                <li><i> Smart Card Reader Model 3310V.2 PN: 9055331 </i> inventory discrepancy from October inventory report was -20 than expected</li>
+                <li>Order 265A PO 9876 Payment Pending. <br> <strong>2 WEEKS LATE!</strong></li>
+                <li>Shipping supplies new manufacturer price negotiation</li>
+                
+            </ul>
+        </section>
+
+        <section id="newbusiness">
+            <h2>New Business:</h2>
+            <ul>
+                <li>FedEx and UPS are <strong>increasing their prizes</strong> for the next quarter. Sales team needs to be informed about this. 
+                They will need to account for this when giving out quotes to customers.</li>
+                <li>November inventory must be sent to Accounts Dept by 1st of Dec</li>
+                <li>Expected container from Singapore arriving 1st week of Jan 2025, need someone forklift certified to be present that week </li>
+                <li><em>New website</em> launching in two weeks, check product listings for accuracy</li>
+            </ul>
+        </section>
+
+        <section id="miscellaneous">
+            <h2>Miscellaneous Comments / Questions / Concerns:</h2>
+                <ul>
+                    <li>When is the company holiday party?</li>
+                    <li>Rob has asked us to <em>make sure doors are locked</em> when we leave for the day especially if you are the last one.
+                    E-mail him if you do not know how to activate alarm so he can show you!</li>
+                </ul>
+        </section>
+
+        <section id="media">
+            <h2>Media:</h2>
+                <h3>Meeting Video:</h3>
+                    <video src="/images/nomoremeetings.mp4" width="400" controls></video>
+
+                <h3>Meeting Audio:</h3>
+                    <audio src="/images/nomoremeetings.mp3" width="400" controls></audio>
+        </section>
+
+        <section id="forms">
+            <h2>Feedback Form</h2>
+                <form>
+                    <fieldset>
+                        <p>Name: <input type="text" name="name"></p> 
+                        <p>Date: <input type="date"></p>
+                        <p>
+                            Department:
+                            <select name="department">
+                                <option value="sales">Sales</option>
+                                <option value="orderprocessing">Order Processing</option>
+                                <option value="management">Management</option>
+                            </select>
+                        </p>
+                        <p>Rate the meeting from 1 to 5: <br>
+                            <input type="radio" name="rating" value="1"> 1 <br>
+                            <input type="radio" name="rating" value="2"> 2 <br>
+                            <input type="radio" name="rating" value="3"> 3 <br>
+                            <input type="radio" name="rating" value="4"> 4 <br>
+                            <input type="radio" name="rating" value="5"> 5
+                        </p>
+                        <p>
+                            Additional comments:<br>
+                            <textarea name="comments" rows="4" cols="40"> </textarea>
+                        </p>
+                        <p>
+                            Was the meeting helpful: <br>
+                            <input list="decisions" name="decision">
+                            <datalist id="decisions">
+                                <option value="Yes">
+                                <option value="No">
+                            </datalist>
+                        </p>
+
+                        <p>
+                            Training Done: <br>
+                            <input type="checkbox" name="training" value="1"> Training Module 1
+                            <input type="checkbox" name="training" value="2"> Training Module 2
+                            <input type="checkbox" name="training" value="3"> Training Module 3
+                            </datalist>
+                        </p>
+
+                         <button type="submit">Submit</button>
+
+                    </fieldset>
+                </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2024 <span> 6Sense LLC </span></p>
+        <p>Turning complexity into clarity by connecting data, ideas, and people to drive smarter, faster, and more meaningful outcomes.</p>
+    </footer>
+  </body>
+</html>
